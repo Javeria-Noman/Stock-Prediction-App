@@ -21,7 +21,6 @@ A full-stack web application built with **Flask** that fetches real-time stock m
 - **Data Science & ML**: Pandas, NumPy, Scikit-Learn, TensorFlow, Seaborn, Matplotlib[cite: 1]
 - **API**: Yahoo Finance (`yfinance`)[cite: 1]
 
----
 
 ## 📁 Project Structure
 
@@ -35,10 +34,22 @@ stock_price_prediction/
 ├── models/                # Saved machine learning / deep learning models[cite: 1]
 ├── outputs/               # Generated graphs and visual plots (.png)[cite: 1]
 ├── static/                # CSS, JavaScript, and image assets
-
-
-
-
 ├── templates/             # HTML files for Flask rendering
 ├── app.py                 # Main Flask application file
 └── requirements.txt       # Project dependencies[cite: 1]
+
+git clone [https://github.com/javeria-noman/stock-price-prediction.git]
+cd stock-price-prediction
+
+python -m venv venv
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+
+pip install -r requirements.txt
+pip install flask pandas numpy matplotlib seaborn scikit-learn tensorflow yfinance
+python app.py
+
+
+
